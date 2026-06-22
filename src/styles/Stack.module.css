@@ -1,0 +1,56 @@
+.section {
+  padding: clamp(4rem, 9vw, 7rem) 0;
+  border-bottom: var(--border-w) solid var(--color-steel);
+}
+
+.headline {
+  font-size: var(--size-h1);
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
+  color: var(--color-paper);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--border-w);
+  border: var(--border-w) solid var(--color-steel);
+  background: var(--color-steel);
+}
+
+.group {
+  background: var(--color-bg);
+  padding: 1.75rem;
+}
+
+.groupLabel {
+  font-size: var(--size-label);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-hazard);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+.itemList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.itemList li {
+  color: var(--color-paper);
+  font-size: 0.95rem;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.itemList li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--color-paper-dim);
+}

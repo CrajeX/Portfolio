@@ -1,0 +1,17 @@
+.section {
+  padding: clamp(4rem, 9vw, 7rem) 0;
+  border-bottom: var(--border-w) solid var(--color-steel);
+  background: var(--color-bg-alt);
+}
+
+.headline {
+  font-size: var(--size-h1);
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
+  color: var(--color-paper);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}

@@ -1,0 +1,114 @@
+.hero {
+  position: relative;
+  padding-top: clamp(3rem, 8vw, 6rem);
+  padding-bottom: clamp(4rem, 10vw, 7rem);
+  border-bottom: var(--border-w) solid var(--color-steel);
+  overflow: hidden;
+}
+
+.inner {
+  position: relative;
+  z-index: 2;
+}
+
+.headline {
+  font-size: var(--size-hero);
+  line-height: 0.86;
+  margin: 0.6rem 0 1.75rem;
+  color: var(--color-paper);
+}
+
+.lineMask {
+  display: block;
+  overflow: hidden;
+}
+
+.line {
+  display: block;
+}
+
+.subhead {
+  max-width: 46ch;
+  color: var(--color-paper-dim);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.ctaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.ctaPrimary,
+.ctaSecondary {
+  display: inline-block;
+  padding: 0.95rem 1.75rem;
+  font-size: var(--size-label);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  text-decoration: none;
+  border: var(--border-w) solid var(--color-paper);
+  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.ctaPrimary {
+  background: var(--color-hazard);
+  color: var(--color-bg);
+  border-color: var(--color-hazard);
+}
+
+.ctaPrimary:hover {
+  transform: translate(-2px, -2px);
+}
+
+.ctaSecondary {
+  color: var(--color-paper);
+}
+
+.ctaSecondary:hover {
+  background: var(--color-paper);
+  color: var(--color-bg);
+  transform: translate(-2px, -2px);
+}
+
+.stampWrap {
+  position: absolute;
+  right: clamp(10rem, 6vw, 6rem);
+  bottom: clamp(2rem, 40vw, 5rem);
+  z-index: 1;
+  opacity: 0.92;
+}
+
+@media (max-width: 720px) {
+  .stampWrap {
+    position: static;
+
+    margin-bottom: 2rem;
+
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;
+    width: 100%;
+  }
+
+}@media (max-width: 1024px) {
+  .stampWrap {
+    position: static;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin: 2rem 0;
+  }
+}
+.stampImage {
+  width: 92%;
+  height: 92%;
+  object-fit: cover;
+  border-radius: 50%;
+}

@@ -1,0 +1,24 @@
+.footer {
+  background: var(--color-bg-alt);
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem var(--gutter);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-paper-dim);
+}
+
+.inner a {
+  text-decoration: none;
+  color: var(--color-paper-dim);
+}
+
+.inner a:hover {
+  color: var(--color-hazard);
+}

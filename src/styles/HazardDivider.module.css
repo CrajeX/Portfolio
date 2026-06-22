@@ -1,0 +1,13 @@
+.divider {
+  height: 14px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--color-hazard),
+    var(--color-hazard) 18px,
+    var(--color-bg) 18px,
+    var(--color-bg) 36px
+  );
+  border-top: var(--border-w) solid var(--color-bg);
+  border-bottom: var(--border-w) solid var(--color-bg);
+}

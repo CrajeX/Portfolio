@@ -1,0 +1,46 @@
+.section {
+  padding: clamp(4rem, 9vw, 7rem) 0;
+  border-bottom: var(--border-w) solid var(--color-steel);
+  background: var(--color-bg-alt);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.headline {
+  font-size: var(--size-h1);
+  line-height: 0.96;
+  color: var(--color-paper);
+}
+
+.line {
+  display: block;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding-top: 0.5rem;
+}
+
+.body p {
+  color: var(--color-paper-dim);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 56ch;
+}
+
+.stampRow {
+  margin-top: 1rem;
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

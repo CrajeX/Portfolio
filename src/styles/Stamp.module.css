@@ -1,0 +1,56 @@
+.stamp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px double currentColor;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.red {
+  color: var(--color-stamp);
+}
+
+.yellow {
+  color: var(--color-hazard);
+}
+
+.sm {
+  width: 84px;
+  height: 84px;
+  font-size: 0.55rem;
+  padding: 4px;
+  line-height: 1.1;
+}
+
+.md {
+  width: 128px;
+  height: 128px;
+  font-size: 0.7rem;
+  padding: 8px;
+  line-height: 1.2;
+}
+
+.lg {
+  width: 300px;
+  height: 300px;
+  font-size: 0.85rem;
+  padding: 10px;
+  line-height: 1.25;
+}
+@media (max-width: 375px) {
+  .lg {
+    width: 80vw;
+    height: 80vw;
+    max-width: 260px;
+    max-height: 260px;
+  }
+}
+
+.stampImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+}
