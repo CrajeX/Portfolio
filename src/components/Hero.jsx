@@ -31,7 +31,7 @@ export default function Hero() {
               animate="visible"
               variants={lineVariants}
             >
-              JEVIN REYES
+              CJ NAPOLES
             </motion.span>
           </span>
             {/* <span className={styles.lineMask}>
