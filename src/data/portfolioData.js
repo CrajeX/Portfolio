@@ -6,9 +6,9 @@
 
 export const profile = {
   name: "Craje",
-  role: "CJ NAPOLESr",
+  role: "Full-Stack Developer",
   location: "Bulacan, Philippines",
-  tagline: "JEVIN REYES",
+  tagline: "CJ NAPOLES",
   subhead:
     "CS graduate (Cum Laude) and freelance developer with 3+ years building real, shipped systems — desktop, web, and networked applications. AI is a tool I direct, not a substitute for understanding what I ship.",
   email: "napoles1cj@gmail.com", // TODO: replace with your real email
