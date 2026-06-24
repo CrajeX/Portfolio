@@ -6,7 +6,7 @@
 
 export const profile = {
   name: "Craje",
-  role: "Full-Stack Developer",
+  role: "CJ NAPOLESr",
   location: "Bulacan, Philippines",
   tagline: "JEVIN REYES",
   subhead:
